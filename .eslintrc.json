@@ -8,7 +8,20 @@
     "plugin:react-hooks/recommended",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "prettier",
+    "import"
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
+  },
   "rules": {
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
